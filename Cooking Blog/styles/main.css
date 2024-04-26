@@ -1,0 +1,556 @@
+/* Mobile First Web Design (i.e.: Pixel 5)*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url(../images/squares_bg.png);
+  color: #686868;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  color: #008080;
+  margin: 0;
+  padding: 30px 0;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* Header */
+header {
+  padding: 30px 0;
+}
+
+header .logo {
+  text-align: center;
+  left: 30px;
+  top: 30px;
+  margin-bottom: 60px;
+  opacity: 0.25;
+  height: 120px;
+}
+
+header h1 {
+  color: #008080;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main menu */
+nav {
+  display: block;
+  padding: 5px;
+  border: 5px solid #008080;
+  border-right: none;
+  border-left: none;
+  background-color: #FFF;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #686868;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #008080;
+  text-decoration: underline;
+}
+
+/* Main Page */
+main {
+  display: block;
+}
+
+section.recipes {
+  margin: 45px 0;
+}
+
+main article {
+  display: block;
+  background-color: #FFF;
+  border: 1px solid #969696;
+  margin: 15px;
+  width: 92.33333%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+main article:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-top: -20px;
+}
+
+main article .author,
+main article .publish-date {
+  font-size: 16px;
+  text-align: right;
+}
+
+main article .publish-date {
+  opacity: 0.75;
+}
+
+main article img {
+  width: 100%;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.clear-fix {
+  clear: both;
+  height: 0;
+}
+
+/* About */
+section.about {
+  clear: both;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px 30px;
+}
+
+section.about h2 {
+  color: #fff;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+section.about p {
+  color: #fff;
+  opacity: 0.80;
+  font-size: 18px;
+  text-shadow: 1px 1px 0 black;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+section.about img {
+  display: none;
+}
+
+/* Footer */
+footer {
+  font-weight: 100;
+  background-color: #008080;
+  font-size: 18px;
+  padding: 30px;
+  line-height: 1.5em;
+  color: rgba(255, 255, 255, 0.75);
+  border-top: solid 2px #fff;
+}
+
+footer .left {
+  text-align: center;
+}
+
+footer .right {
+  text-align: center;
+}
+
+footer strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+/* Tablet Version (i.e.: Ipad Air) */
+@media only screen and (min-width:820px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: url(../images/squares_bg.png);
+    color: #686868;
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    color: #008080;
+    margin: 0;
+    padding: 30px 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 1.5em;
+  }
+
+  /* Header */
+  header {
+    padding: 35px 0;
+  }
+
+  header .logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    opacity: 0.25;
+    height: 120px;
+    overflow: hidden;
+  }
+
+  header h1 {
+    color: #008080;
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Main menu */
+  nav {
+    display: block;
+    padding: 20px;
+    border: 5px solid #008080;
+    border-right: none;
+    border-left: none;
+    background-color: #FFF;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    list-style: none;
+    text-align: center;
+    padding: 0 10px;
+    display: inline;
+  }
+
+  nav ul li a {
+    font-size: 17px;
+    font-weight: 500;
+    color: #686868;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    color: #008080;
+    text-decoration: underline;
+  }
+
+  /* Main Page */
+  main {
+    display: block;
+  }
+
+  section.recipes {
+    margin: 50px 0;
+  }
+
+  main article {
+    display: block;
+    background-color: #FFF;
+    border: 1px solid #969696;
+    margin: 30px;
+    width: 93.33333%;
+    padding: 20px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  main article:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin-top: -20px;
+  }
+
+  main article .author,
+  main article .publish-date {
+    font-size: 19px;
+    text-align: right;
+  }
+
+  main article .publish-date {
+    opacity: 0.75;
+  }
+
+  main article img {
+    float: left;
+    width: 30%;
+    margin-right: 35px;
+    border-radius: 50%;
+    margin-bottom: ;
+  }
+
+  .clear-fix {
+    clear: both;
+    height: 0;
+  }
+
+  /* About */
+  section.about {
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 30px;
+  }
+
+  section.about h2 {
+    color: #fff;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.75);
+  }
+
+  section.about p {
+    color: #fff;
+    opacity: 0.75;
+    text-shadow: 1px 1px 0 black;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+
+  section.about img {
+    display: block;
+    float: left;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+  }
+
+  /* Footer */
+  footer {
+    font-weight: 100;
+    background-color: #008080;
+    font-size: 19px;
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.75);
+    border-top: solid 2px #fff;
+  }
+
+  footer .left {
+    text-align: center;
+  }
+
+  footer .right {
+    text-align: center;
+  }
+
+  footer strong {
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+
+
+
+
+
+
+/* Desktop Version */
+@media only screen and (min-width:1181px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: url(../images/squares_bg.png);
+    color: #686868;
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    color: #008080;
+    margin: 0;
+    padding: 30px 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Dancing Script', cursive;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 1.5em;
+  }
+
+  /* Header */
+  header {
+    padding: 30px 0;
+  }
+
+  header .logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    opacity: 0.25;
+    height: 120px;
+    overflow: hidden;
+  }
+
+  header h1 {
+    color: #008080;
+    text-align: center;
+    font-size: 72px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Main menu */
+  nav {
+    display: block;
+    padding: 30px;
+    border: 5px solid #008080;
+    border-right: none;
+    border-left: none;
+    background-color: #FFF;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    list-style: none;
+    text-align: center;
+    padding: 0 20px;
+    display: inline;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #686868;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    color: #008080;
+    text-decoration: underline;
+  }
+
+  /* Main Page */
+  main {
+    display: block;
+  }
+
+  section.recipes {
+    margin: 50px 0;
+  }
+
+  main article {
+    display: block;
+    background-color: #FFF;
+    border: 1px solid #969696;
+    margin: 0 2%;
+    width: 29.33333%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  main article:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin-top: -20px;
+  }
+
+  main article .author,
+  main article .publish-date {
+    font-size: 17px;
+    text-align: right;
+  }
+
+  main article .publish-date {
+    opacity: 0.75;
+  }
+
+  main article img {
+    width: 100%;
+    margin: 0;
+    border-radius: 50%;
+  }
+
+  .clear-fix {
+    clear: both;
+    height: 0;
+  }
+
+  /* About */
+  section.about {
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 30px;
+  }
+
+  section.about h2 {
+    color: #fff;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.75);
+  }
+
+  section.about p {
+    color: #fff;
+    opacity: 0.75;
+    text-shadow: 1px 1px 0 black;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+
+  section.about img {
+    float: left;
+    margin-right: 50px;
+    margin-top: 15px;
+  }
+
+  /* Footer */
+  footer {
+    font-weight: 100;
+    background-color: #008080;
+    font-size: 19px;
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.75);
+    border-top: solid 2px #fff;
+  }
+
+  footer .left {
+    float: left;
+  }
+
+  footer .right {
+    float: right;
+  }
+
+  footer strong {
+    color: #fff;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Lato:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: rgb(253, 215, 0);
+}
+
+/* Buttons */
+button {
+    width: 150px;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    border: 0.5px solid black;
+    cursor: pointer;
+    background-color: black;
+    background-image: url("/images/button-collection.png");
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+}
+
+button:hover {
+    background-position: center;
+}
+
+button:nth-child(1) {
+    filter: hue-rotate(0deg);
+}
+
+/* Text */
+div h1 {
+    font-size: 30px;
+    padding-top: 0;
+}
+
+div.sign_in {
+    text-align: center;
+}
+
+div.checkbox {
+    text-align: center;
+}
+
+.container {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+/* MOBILE FIRST */
+
+/* MENU - NAVBAR */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 65px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    min-height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: rgb(253, 215, 0);
+}
+
+.nav-menu {
+    margin-top: 22px;
+    position: fixed;
+    left: 100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(253, 215, 0);
+    width: 100%;
+    text-align: center;
+}
+
+.hamburger {
+    display: inline;
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu.active {
+    left: 0;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* BODY */
+
+#perdemos {
+    color: rgb(253, 215, 0) ;
+}
+
+#perdemos s {
+    color: black;
+}
+body {
+    font-family: 'GFS Didot', serif;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+h1 {
+    font-family: 'GFS Didot', serif;
+    font-size: 50px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: rgb(253, 215, 0);
+    margin-top: 50px;
+    padding: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+/* FOOTER */
+
+footer {
+    color: white;
+    font-weight: 100;
+    background-color: black;
+    font-size: 20px;
+    clear: both;
+
+}
+
+/*Footer help button*/
+
+footer .help {
+    position: relative;
+    padding: 20px;
+}
+
+footer .help img {
+    position: absolute;
+    right: 0;
+    margin-right: 14px;
+    height: 25px;
+    margin-bottom: 16px;
+}
+
+/*Footer about button*/
+footer .about {
+    position: relative;
+    padding: 20px;
+}
+
+footer .about img {
+    position: absolute;
+    right: 0;
+    margin-right: 14px;
+    height: 25px;
+    margin-bottom: 16px;
+}
+
+/*Footer for social medias*/
+footer .socialmedia {
+    padding: 15px;
+}
+
+footer .socialmediaword {
+    margin-bottom: 20px;
+}
+
+footer .socialmedia .facebook {
+    float: left;
+    margin-right: 20px;
+}
+
+footer .socialmedia .facebook img {
+    height: 30px;
+}
+
+footer .socialmedia .instagram {
+    float: left;
+    margin-right: 20px;
+}
+
+footer .socialmedia .instagram img {
+    height: 30px;
+}
+
+footer .socialmedia .youtube img {
+    height: 30px;
+    margin-right: 20px;
+}
+
+/*Footer for copyright*/
+footer .copyright {
+    padding: 10px 10px;
+}
+
+/* MAIN PAGE - HOME */
+main .hexa {
+    margin-top: 0px;
+    padding: 100px;
+    background: url(/images/torcida.jpg);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+main .collection {
+    margin: 30px 0;
+    text-align: center;
+    font-family: 'GFS Didot', serif;
+}
+
+main .collection img {
+    height: 80px;
+    width: 160px;
+
+}
+
+main .video {
+    margin-top: 1px;
+    height: 80%;
+}
+
+main input {
+    color: white;
+    background-color: rgb(0, 80, 253);
+    border: solid 1px;
+    border-radius: 25px;
+    height: 40%;
+    padding: 12px 25px;
+    margin: 20px 15px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* MAIN PAGE - SHOPPING */
+
+main.main_shopping {
+    padding: 70px;
+}
+
+main .bag {
+    text-align: center;
+}
+
+main .bag h1 {
+    margin-top: 0;
+}
+
+/* MAIN PAGE - ACCOUNT */
+.account-main {
+    width: 10px;
+    opacity: 30%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+main .sign_in input {
+    margin: 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    opacity: 0.40;
+    border-radius: 0;
+    width: 80%;
+}
+
+main .checkbox input {
+    margin-right: 5px;
+}
+
+.container {
+    display: flex;
+    padding-top: 20px;
+}
+
+.container .img {
+    background-size: cover;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-torcida2,
+.img-torcida3 {
+    position: absolute;
+    opacity: 0;
+}
+
+.img-torcida2:hover {
+    opacity: 1;
+}
+
+.img-torcida3:hover {
+    opacity: 1;
+}
+
+.join-us {
+    margin-bottom: 70px;
+}
+
+.img-torcida1,
+.img-torcida2,
+.img-torcida3 {
+    transition: all 0.3s ease;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+   
+}
+
+#contact #submit_button {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#contact button {
+     background-color: blue;
+}
+
+#contact .info {
+    color: black;
+    background-color: white;
+}
+
+
+
+
+/*forgotten account*/
+
+.forgotten {
+    padding-top: 20px;
+}
+
+.forgotten,
+.join-us {
+    font-size: 20px;
+}
+
+main .submit input,
+p {
+    text-align: center;
+    margin: 5px;
+    font-family: 'GFS Didot', serif;
+    font-size: 25px;
+}
+
+/* MAIN PAGE - FAVOURITES*/
+main .bag{
+    margin-top: 25px;
+}
+
+section.product-list {
+    background-color: white;
+}
+
+.product-list {
+    padding: 3em;
+    background-color: #dfe6e9;
+}
+
+.product-list .options {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 10px 5px #b2bec3;
+    text-align: center;
+    align-items: center;
+}
+
+section.product-list .product-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-container .options {
+    background-color: white;
+    border-radius: 10px;
+    padding: 100px;
+
+}
+
+.options .title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'GFS Didot', serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-container img {
+    width: 100px;
+}
+
+/* MAIN PAGE - WORLD CUP QATAR */
+
+h3{
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.content{
+    width: 100%;
+    height: 450px;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,.16),
+    0 3px 6px rgba(0,0,0,.23);
+    transform: translate(0px, -8px);
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.content p{
+    padding-top: 0 8px;
+    font-size: 20px; /*ver*/
+    margin-top: 10px;
+}
+
+h6{
+    font-size: 16px; /*ver*/
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+.buy{
+    margin-top: 10px;
+}
+
+
+
+
+/*MOBILE DESIGN 530px */
+
+@media only screen and (min-width: 580px) {
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: 22px;
+        margin-top: 0;
+        padding-top: 0;
+        padding-right: 0;
+        width: 60%;
+        list-style: none;
+        left: 300px;
+        flex-direction: row;
+        position: absolute;
+    }
+    
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .nav-link {
+        transition: 0.7s ease;
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+
+    /* MAIN PAGE - HOME */
+    main .video {
+        margin-top: 1px;
+        height: 80%;
+        width: 70%;
+        margin-left: 17%;
+    } 
+
+    main #divVideo {
+       background: black;
+    }
+
+    /* MAIN PAGE - SHOPPING */
+
+    main.main_shopping {
+        padding: 100px 0;
+    } 
+
+    /* MAIN PAGE - FAVOURITES */
+    .product-list {
+        padding: 0.2em;
+        background-color: #dfe6e9;  
+    }
+    section.product-list .product-container {
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        padding: 5px;
+    }
+
+    .product-list .options {
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0px 10px 5px #b2bec3;
+        margin: 5px 12px;
+        width: 100%;
+    }
+
+    .options .title {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'GFS Didot', serif;
+    }
+
+    .options .img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    /* MAIN PAGE - WORLD CUP QATAR */
+    .content 
+    {
+        width: 20%;
+    }
+
+}
+
+/* IPAD DESIGN */
+
+@media(min-width: 740px) {
+
+    /* MAIN PAGE - HOME */
+    main .video {
+        margin-top: 1px;
+        height: 80%;
+        width: 50%;
+        margin-left: 27%;
+    }
+
+    /* MAIN PAGE - ACCOUNT */
+    main .sign_in input {
+        width: 50%;
+    }
+
+    /* MAIN PAGE - WORLD CUP QATAR */
+    .content 
+    {
+        width: 45%;
+    }
+}
+
